@@ -11,12 +11,12 @@ from botocore.config import Config
 # Your specific Concept IDs
 TARGET_CONCEPT_IDS = ['C15151743', 'C69562835', 'C190743605', 'C28225019', 'C152662350']
 DB_PATH = "openalex_local.db"
-NUM_PROCESSES = 6  # Adjust based on your CPU cores
+NUM_PROCESSES = 12
 # ---------------------
 
 def get_db_connection():
     con = duckdb.connect(DB_PATH)
-    con.execute("SET memory_limit='8GB'") 
+    con.execute("SET memory_limit='32GB'") 
     return con
 
 def init_db(con):
