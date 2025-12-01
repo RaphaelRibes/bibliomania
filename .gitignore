@@ -3,3 +3,6 @@ Créer un outil de recherche scientifique local.md
 __pycache__/
 openalex_local.db
 frontend/node_modules/
+# pixi environments
+.pixi/*
+!.pixi/config.toml
