@@ -1,0 +1,9 @@
+torch
+duckdb
+fastapi
+uvicorn
+transformers
+adapters
+numpy
+scikit-learn
+networkx
